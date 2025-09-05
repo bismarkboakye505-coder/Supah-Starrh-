@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignments — Mechanics for SHS Students</title>
+  <link rel="icon" href="assets/crest.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    if (localStorage.getItem("loggedIn") !== "true") {
+      window.location.href = "login.html";
+    }
+  </script>
+</head>
+<body data-page="assignments">
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-left">
+      <img src="assets/crest.jpg" alt="Mechanics Crest Logo" class="nav-logo">
+      <span class="site-title">Mechanics</span>
+    </div>
+    <div class="nav-links" role="navigation">
+      <a href="index.html">Home</a>
+      <a href="laws-of-motion.html">Laws</a>
+      <a href="forces.html">Forces</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="assignments.html" class="active" aria-current="page">Assignments</a>
+      <a href="video.html">Videos</a>
+      <a href="login.html">Login</a>
+    </div>
+  </nav>
+
+  <!-- ===== HEADER SECTION WITH BACKGROUND IMAGE ===== -->
+  <header class="page-header" role="banner">
+    <div class="overlay"></div>
+    <div class="header-content">
+      <h1>Assignments</h1>
+      <p>Practice your understanding of Mechanics with these auto-graded assignments.</p>
+      <a href="#assignments-content" class="btn btn-gradient">Start Assignments</a>
+    </div>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="dashboard" role="main">
+    <h2 class="section-title">Assignments — Auto-Graded</h2>
+    <p class="intro-text">Answer the short questions below and click Check Answers. Upload is optional for extended work.</p>
+    
+    <!-- Assignments Content -->
+    <section class="assignments-content" id="assignments-content">
+      <form id="assignForm" class="assign-form" aria-describedby="assignHelp">
+        <div class="quiz-question">
+          <p>1) State Newton’s Third Law of Motion.</p>
+          <input type="text" name="a1" placeholder="Type your answer here" aria-label="Newton’s Third Law">
+        </div>
+        <div class="quiz-question">
+          <p>2) A 4 kg block is pulled with a force of 20 N on a smooth surface. Find its acceleration (m/s²).</p>
+          <input type="text" name="a2" placeholder="e.g., 5" aria-label="Acceleration calculation">
+        </div>
+        <div class="quiz-question">
+          <p>3) Name TWO non-contact forces (comma separated).</p>
+          <input type="text" name="a3" placeholder="e.g., gravity, magnetic" aria-label="Non-contact forces">
+        </div>
+        <div class="row">
+          <button type="submit" class="btn">Check Answers</button>
+        </div>
+        <div id="assignResult" class="quiz-result" aria-live="polite"></div>
+      </form>
+      <p id="assignHelp" class="muted small">The assignments are auto-graded on this page.</p>
+
+      <!-- File Upload -->
+      <section class="file-upload">
+        <h3>Extended Submission (Optional)</h3>
+        <p class="muted small">Upload a scanned solution or PDF. (Client-side demo only — files won't be sent anywhere.)</p>
+        <input id="uploadField" type="file" accept=".pdf,.jpg,.jpeg,.png" aria-label="Upload assignment file">
+        <div id="uploadInfo" class="muted small"></div>
+      </section>
+
+      <!-- Comments -->
+      <section class="comments">
+        <h3>Comments</h3>
+        <form id="commentForm" class="row">
+          <input id="commentName" type="text" placeholder="Your name (optional)" aria-label="Name for comment">
+          <input id="commentText" type="text" placeholder="Write a short comment" aria-label="Comment text">
+          <button type="submit" class="btn">Post</button>
+        </form>
+        <ul id="commentList"></ul>
+        <p class="muted small">Comments are stored locally in your browser (demo).</p>
+      </section>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <p class="author">Bismark Owiredu Boakye — Index: 5230110265</p>
+    <p class="contact">
+      Email: <a href="mailto:bismarkboakye505@gmail.com">bismarkboakye505@gmail.com</a> | 
+      Phone: <a href="tel:+233257409913">+233 25 740 9913</a>
+    </p>
+    <p>© <span id="year"></span> Mechanics for SHS Students</p>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

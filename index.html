@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mechanics for SHS Students</title>
+  <link rel="icon" href="assets/crest.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="assets/style.css" />
+  <script>
+    if (localStorage.getItem("loggedIn") !== "true") {
+      window.location.href = "login.html";
+    }
+  </script>
+</head>
+
+<body data-page="home">
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-left">
+      <img src="assets/crest.jpg" alt="Mechanics Crest Logo" class="nav-logo">
+      <span class="site-title">Mechanics</span>
+    </div>
+    <div class="nav-links" role="navigation">
+      <a href="index.html" class="active" aria-current="page">Home</a>
+      <a href="laws-of-motion.html">Laws</a>
+      <a href="forces.html">Forces</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="assignments.html">Assignments</a>
+      <a href="video.html">Videos</a>
+      <a href="login.html">Login</a>
+    </div>
+  </nav>
+
+  <!-- ===== HEADER SECTION WITH BACKGROUND IMAGE ===== -->
+  <header class="page-header" role="banner">
+    <div class="overlay"></div>
+    <div class="header-content">
+      <h1>Welcome to Mechanics</h1>
+      <p>Learn Newton’s Laws, Forces, Pulleys, Inclined Planes, and more — with quizzes and assignments.</p>
+      <a href="laws-of-motion.html" class="btn btn-gradient">Start Learning</a>
+    </div>
+  </header>
+
+  <!-- ===== DASHBOARD GRID ===== -->
+  <main class="dashboard" role="main">
+    <h2 class="section-title">Your Learning Hub</h2>
+    <div class="dashboard-grid">
+      <a href="laws-of-motion.html" class="tile"><div class="tile-icon" aria-hidden="true">⚖️</div><h3>Laws of Motion</h3></a>
+      <a href="forces.html" class="tile"><div class="tile-icon" aria-hidden="true">💪</div><h3>Forces</h3></a>
+      <a href="inclined-planes.html" class="tile"><div class="tile-icon" aria-hidden="true">📐</div><h3>Inclined Planes</h3></a>
+      <a href="pulley-system.html" class="tile"><div class="tile-icon" aria-hidden="true">🪢</div><h3>Pulley Systems</h3></a>
+      <a href="quiz.html" class="tile"><div class="tile-icon" aria-hidden="true">📝</div><h3>Quiz</h3></a>
+      <a href="assignments.html" class="tile"><div class="tile-icon" aria-hidden="true">📂</div><h3>Assignments</h3></a>
+      <a href="video.html" class="tile"><div class="tile-icon" aria-hidden="true">🎥</div><h3>Videos</h3></a>
+      <a href="login.html" class="tile"><div class="tile-icon" aria-hidden="true">🔐</div><h3>Login</h3></a>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <p class="author">Bismark Owiredu Boakye — Index: 5230110265</p>
+    <p class="contact">
+      Email: <a href="mailto:bismarkboakye505@gmail.com">bismarkboakye505@gmail.com</a> | 
+      Phone: <a href="tel:+233257409913">+233 25 740 9913</a>
+    </p>
+    <p>© <span id="year"></span> Mechanics for SHS Students</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos — Mechanics for SHS Students</title>
+  <link rel="icon" href="assets/crest.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    if (localStorage.getItem("loggedIn") !== "true") {
+      window.location.href = "login.html";
+    }
+  </script>
+</head>
+<body data-page="videos">
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-left">
+      <img src="assets/crest.jpg" alt="Mechanics Crest Logo" class="nav-logo">
+      <span class="site-title">Mechanics</span>
+    </div>
+    <div class="nav-links" role="navigation">
+      <a href="index.html">Home</a>
+      <a href="laws-of-motion.html">Laws</a>
+      <a href="forces.html">Forces</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="assignments.html">Assignments</a>
+      <a href="video.html" class="active" aria-current="page">Videos</a>
+      <a href="login.html">Login</a>
+    </div>
+  </nav>
+
+  <!-- ===== HEADER SECTION WITH BACKGROUND IMAGE ===== -->
+  <header class="page-header" role="banner">
+    <div class="overlay"></div>
+    <div class="header-content">
+      <h1>Learning Videos</h1>
+      <p>Explore short clips with visuals to enhance your understanding of Mechanics.</p>
+      <a href="#videos-content" class="btn btn-gradient">Watch Now</a>
+    </div>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="dashboard" role="main">
+    <h2 class="section-title">Learning Videos</h2>
+    <p class="intro-text">Short clips on key Mechanics topics with accompanying visuals. Click a download link to save the video.</p>
+    
+    <!-- Videos Content -->
+    <section class="videos-content" id="videos-content">
+      <div class="vgrid">
+        <!-- Laws of Motion -->
+        <article class="vcard">
+          <img src="assets/posters/laws.jpg" alt="Thumbnail for Newton’s Laws of Motion" class="vcard-thumb">
+          <h3>Laws of Motion</h3>
+          <video controls preload="metadata" aria-label="Video on Newton’s Laws of Motion">
+            <source src="assets/videos/lawvid.mp4" type="video/mp4">
+            <source src="assets/videos/lawvid.webm" type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+          <p>Overview of Newton’s 1st, 2nd, and 3rd Laws with quick examples.</p>
+          <a href="assets/videos/lawvid.mp4" download>Download (MP4)</a>
+        </article>
+
+        <!-- Inclined Planes -->
+        <article class="vcard">
+          <img src="assets/posters/incline.jpg" alt="Thumbnail for Inclined Planes" class="vcard-thumb">
+          <h3>Inclined Planes</h3>
+          <video controls preload="metadata" aria-label="Video on Inclined Planes">
+            <source src="assets/videos/BB.mp4" type="video/mp4">
+            <source src="assets/videos/BB.webm" type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+          <p>Resolving weight into components, a = g sinθ, and friction effects.</p>
+          <a href="assets/videos/BB.mp4" download>Download (MP4)</a>
+        </article>
+
+        <!-- Pulley System -->
+        <article class="vcard">
+          <img src="assets/posters/pulley.jpg" alt="Thumbnail for Pulley Systems" class="vcard-thumb">
+          <h3>Pulley System</h3>
+          <video controls preload="metadata" aria-label="Video on Pulley Systems">
+            <source src="assets/videos/pulvid.mp4" type="video/mp4">
+            <source src="assets/videos/pulvid.webm" type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+          <p>Atwood machines and fixed/movable pulleys: tension and acceleration.</p>
+          <a href="assets/videos/pulvid.mp4" download>Download (MP4)</a>
+        </article>
+
+        <!-- Forces -->
+        <article class="vcard">
+          <img src="assets/posters/forces.jpg" alt="Thumbnail for Forces" class="vcard-thumb">
+          <h3>Forces</h3>
+          <video controls preload="metadata" aria-label="Video on Forces">
+            <source src="assets/videos/forcevid.mp4" type="video/mp4">
+            <source src="assets/videos/forcevid.webm" type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+          <p>Contact vs non-contact forces: normal, tension, friction, gravity, etc.</p>
+          <a href="assets/videos/forcevid.mp4" download>Download (MP4)</a>
+        </article>
+      </div>
+      
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <p class="author">Bismark Owiredu Boakye — Index: 5230110265</p>
+    <p class="contact">
+      Email: <a href="mailto:bismarkboakye505@gmail.com">bismarkboakye505@gmail.com</a> | 
+      Phone: <a href="tel:+233257409913">+233 25 740 9913</a>
+    </p>
+    <p>© <span id="year"></span> Mechanics for SHS Students</p>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

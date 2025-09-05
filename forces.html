@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forces — Mechanics for SHS Students</title>
+  <link rel="icon" href="assets/crest.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    if (localStorage.getItem("loggedIn") !== "true") {
+      window.location.href = "login.html";
+    }
+  </script>
+</head>
+<body data-page="forces">
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-left">
+      <img src="assets/crest.jpg" alt="Mechanics Crest Logo" class="nav-logo">
+      <span class="site-title">Mechanics</span>
+    </div>
+    <div class="nav-links" role="navigation">
+      <a href="index.html">Home</a>
+      <a href="laws-of-motion.html">Laws</a>
+      <a href="forces.html" class="active" aria-current="page">Forces</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="assignments.html">Assignments</a>
+      <a href="video.html">Videos</a>
+      <a href="login.html">Login</a>
+    </div>
+  </nav>
+
+  <!-- ===== HEADER SECTION WITH BACKGROUND IMAGE ===== -->
+  <header class="page-header" role="banner">
+    <div class="overlay"></div>
+    <div class="header-content">
+      <h1>Forces</h1>
+      <p>Understand the pushes and pulls that govern motion in the physical world.</p>
+      <a href="#forces-content" class="btn btn-gradient">Learn More</a>
+    </div>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="dashboard" role="main">
+    <h2 class="section-title">Forces</h2>
+    <p class="intro-text">A force is a push or pull that causes an object to change its motion or shape. Forces are fundamental to understanding the behavior of objects.</p>
+    
+    <!-- Forces Content -->
+    <section class="forces-content" id="forces-content">
+      <div class="forces-container">
+        <div class="forces-text">
+          <h3>Types of Forces</h3>
+          <ol>
+            <li><strong>Contact Forces:</strong> Forces from physical contact:
+              <ul>
+                <li><i>Frictional Force</i>: Opposes motion between two surfaces in contact.</li>
+                <li><i>Normal Force</i>: Perpendicular to the surface, exerted by a surface on an object.</li>
+                <li><i>Tension Force</i>: Exerted by a string or rope when pulled.</li>
+                <li><i>Applied Force</i>: A force applied by a person or another object.</li>
+              </ul>
+            </li>
+            <li><strong>Non-Contact Forces:</strong> Forces without physical contact:
+              <ul>
+                <li><i>Gravitational Force</i>: Attraction between objects with mass.</li>
+                <li><i>Electromagnetic Force</i>: Forces between charged particles or magnetic fields.</li>
+                <li><i>Nuclear Forces</i>: Forces holding protons and neutrons in a nucleus.</li>
+              </ul>
+            </li>
+          </ol>
+
+          <h3>Characteristics of Forces</h3>
+          <ul>
+            <li><strong>Magnitude:</strong> Measured in Newtons (N).</li>
+            <li><strong>Direction:</strong> The direction of application.</li>
+            <li><strong>Point of Application:</strong> Where the force is applied.</li>
+          </ul>
+
+          <h3>Newton’s Laws of Motion (Force Relationship)</h3>
+          <ul>
+            <li><strong>First Law (Inertia):</strong> An object at rest stays at rest, and an object in motion stays in motion unless acted upon by an external force.</li>
+            <li><strong>Second Law:</strong> <i>F = ma</i> → Net force equals mass × acceleration.</li>
+            <li><strong>Third Law:</strong> Every action has an equal and opposite reaction.</li>
+          </ul>
+
+          <h3>Force Diagrams</h3>
+          <p>Force diagrams (free-body diagrams) are used to visualize and analyze forces acting on an object. They help determine net force and predict motion.</p>
+
+          <h3>Applications of Forces</h3>
+          <ul>
+            <li><strong>Mechanics:</strong> Design and analysis of mechanical systems.</li>
+            <li><strong>Engineering:</strong> Structures, bridges, and machines depend on force analysis.</li>
+            <li><strong>Physics:</strong> Forces explain the motion of particles and celestial bodies.</li>
+          </ul>
+
+          <h3>Real-World Examples</h3>
+          <ul>
+            <li><strong>Friction:</strong> Walking, driving, gripping objects.</li>
+            <li><strong>Gravity:</strong> Keeps objects grounded, governs planetary motion.</li>
+            <li><strong>Tension:</strong> Found in ropes, strings, and cables.</li>
+          </ul>
+
+          <h3>Worked Examples on Forces</h3>
+          <div class="example-box">
+            <h4>Example 1: Object on a Horizontal Surface</h4>
+            <p><strong>Problem:</strong> A 10 kg box is pushed with a force of 20 N on a horizontal surface. If the coefficient of kinetic friction is 0.1, find the acceleration of the box.</p>
+            <p><strong>Step 1:</strong> Frictional force f = μN = 0.1 × 10 × 9.8 = 9.8 N</p>
+            <p><strong>Step 2:</strong> Net force F<sub>net</sub> = F<sub>applied</sub> - f = 20 - 9.8 = 10.2 N</p>
+            <p><strong>Step 3:</strong> Acceleration a = F<sub>net</sub> / m = 10.2 / 10 = 1.02 m/s²</p>
+            <p><strong>Answer:</strong> The acceleration is <strong>1.02 m/s²</strong>.</p>
+          </div>
+          <div class="example-box">
+            <h4>Example 2: Object on an Inclined Plane</h4>
+            <p><strong>Problem:</strong> A 5 kg block is on an inclined plane at 30°. Find the force required to pull it up with an acceleration of 2 m/s² (frictionless).</p>
+            <p><strong>Step 1:</strong> Parallel weight = mg sinθ = 5 × 9.8 × 0.5 = 24.5 N</p>
+            <p><strong>Step 2:</strong> Net force F = ma + mg sinθ = (5 × 2) + 24.5 = 34.5 N</p>
+            <p><strong>Answer:</strong> Required force is <strong>34.5 N</strong>.</p>
+          </div>
+          <div class="example-box">
+            <h4>Example 3: Tension in a Rope</h4>
+            <p><strong>Problem:</strong> A 20 kg block is lifted vertically with an acceleration of 1.5 m/s². Find the tension in the rope.</p>
+            <p><strong>Step 1:</strong> Weight = mg = 20 × 9.8 = 196 N</p>
+            <p><strong>Step 2:</strong> Net force = ma = 20 × 1.5 = 30 N</p>
+            <p><strong>Step 3:</strong> Tension T = mg + ma = 196 + 30 = 226 N</p>
+            <p><strong>Answer:</strong> The tension is <strong>226 N</strong>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slideshow -->
+    <section class="slideshow-container">
+      <div class="slide fade"><img src="assets/force1.jpg" alt="Force Illustration 1"></div>
+      <div class="slide fade"><img src="assets/force2.jpg" alt="Force Illustration 2"></div>
+      <div class="slide fade"><img src="assets/force3.jpg" alt="Force Illustration 3"></div>
+      <a class="prev" onclick="plusSlides(-1)" aria-label="Previous slide">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)" aria-label="Next slide">&#10095;</a>
+      <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <p class="author">Bismark Owiredu Boakye — Index: 5230110265</p>
+    <p class="contact">
+      Email: <a href="mailto:bismarkboakye505@gmail.com">bismarkboakye505@gmail.com</a> | 
+      Phone: <a href="tel:+233257409913">+233 25 740 9913</a>
+    </p>
+    <p>© <span id="year"></span> Mechanics for SHS Students</p>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

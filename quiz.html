@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz — Mechanics for SHS Students</title>
+  <link rel="icon" href="assets/crest.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    if (localStorage.getItem("loggedIn") !== "true") {
+      window.location.href = "login.html";
+    }
+  </script>
+</head>
+<body data-page="quiz">
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-left">
+      <img src="assets/crest.jpg" alt="Mechanics Crest Logo" class="nav-logo">
+      <span class="site-title">Mechanics</span>
+    </div>
+    <div class="nav-links" role="navigation">
+      <a href="index.html">Home</a>
+      <a href="laws-of-motion.html">Laws</a>
+      <a href="forces.html">Forces</a>
+      <a href="quiz.html" class="active" aria-current="page">Quiz</a>
+      <a href="assignments.html">Assignments</a>
+      <a href="video.html">Videos</a>
+      <a href="login.html">Login</a>
+    </div>
+  </nav>
+
+  <!-- ===== HEADER SECTION WITH BACKGROUND IMAGE ===== -->
+  <header class="page-header" role="banner">
+    <div class="overlay"></div>
+    <div class="header-content">
+      <h1>Quiz</h1>
+      <p>Test your understanding of Newton’s Laws and Forces with this interactive quiz.</p>
+      <a href="#quiz-content" class="btn btn-gradient">Take the Quiz</a>
+    </div>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="dashboard" role="main">
+    <h2 class="section-title">Quiz — Check Your Understanding</h2>
+    <p class="intro-text">Answer the multiple-choice questions and click Submit to see your results.</p>
+    
+    <!-- Quiz Content -->
+    <section class="quiz-content" id="quiz-content">
+      <form id="quizForm" aria-describedby="quizHelp">
+        <div class="quiz-question">
+          <p>1) Newton’s First Law is also called:</p>
+          <label><input type="radio" name="q1" value="a"> Law of Action–Reaction</label><br>
+          <label><input type="radio" name="q1" value="b"> Law of Inertia</label><br>
+          <label><input type="radio" name="q1" value="c"> Law of Energy</label>
+        </div>
+        <div class="quiz-question">
+          <p>2) A block on a smooth incline of angle θ has acceleration:</p>
+          <label><input type="radio" name="q2" value="a"> g cosθ</label><br>
+          <label><input type="radio" name="q2" value="b"> g sinθ</label><br>
+          <label><input type="radio" name="q2" value="c"> μg cosθ</label>
+        </div>
+        <div class="quiz-question">
+          <p>3) In an Atwood machine, if m₁ = m₂, acceleration is:</p>
+          <label><input type="radio" name="q3" value="a"> g</label><br>
+          <label><input type="radio" name="q3" value="b"> 0</label><br>
+          <label><input type="radio" name="q3" value="c"> 9.8 m/s²</label>
+        </div>
+        <div class="quiz-question">
+          <p>4) Which is a <em>non-contact</em> force?</p>
+          <label><input type="radio" name="q4" value="a"> Friction</label><br>
+          <label><input type="radio" name="q4" value="b"> Normal Reaction</label><br>
+          <label><input type="radio" name="q4" value="c"> Gravitational Force</label>
+        </div>
+        <div class="quiz-question">
+          <p>5) SI unit of force is:</p>
+          <label><input type="radio" name="q5" value="a"> Newton (N)</label><br>
+          <label><input type="radio" name="q5" value="b"> Joule (J)</label><br>
+          <label><input type="radio" name="q5" value="c"> Watt (W)</label>
+        </div>
+        <div class="row">
+          <button type="submit" class="btn">Submit</button>
+        </div>
+        <div id="quizResult" class="quiz-result" aria-live="polite"></div>
+      </form>
+      <p id="quizHelp" class="muted small">The quiz is auto-graded on this page.</p>
+
+      <!-- Comments -->
+      <section class="comments">
+        <h3>Comments</h3>
+        <form id="commentForm" class="row">
+          <input id="commentName" type="text" placeholder="Your name (optional)" aria-label="Name for comment">
+          <input id="commentText" type="text" placeholder="Write a short comment" aria-label="Comment text">
+          <button type="submit" class="btn">Post</button>
+        </form>
+        <ul id="commentList"></ul>
+        <p class="muted small">Comments are stored locally in your browser (demo).</p>
+      </section>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <p class="author">Bismark Owiredu Boakye — Index: 5230110265</p>
+    <p class="contact">
+      Email: <a href="mailto:bismarkboakye505@gmail.com">bismarkboakye505@gmail.com</a> | 
+      Phone: <a href="tel:+233257409913">+233 25 740 9913</a>
+    </p>
+    <p>© <span id="year"></span> Mechanics for SHS Students</p>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

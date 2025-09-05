@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pulley System — Mechanics for SHS Students</title>
+  <link rel="icon" href="assets/crest.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    if (localStorage.getItem("loggedIn") !== "true") {
+      window.location.href = "login.html";
+    }
+  </script>
+</head>
+<body data-page="pulley-system">
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-left">
+      <img src="assets/crest.jpg" alt="Mechanics Crest Logo" class="nav-logo">
+      <span class="site-title">Mechanics</span>
+    </div>
+    <div class="nav-links" role="navigation">
+      <a href="index.html">Home</a>
+      <a href="laws-of-motion.html">Laws</a>
+      <a href="forces.html">Forces</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="assignments.html">Assignments</a>
+      <a href="video.html">Videos</a>
+      <a href="pulley-system.html" class="active" aria-current="page">Pulley System</a>
+      <a href="login.html">Login</a>
+    </div>
+  </nav>
+
+  <!-- ===== HEADER SECTION WITH BACKGROUND IMAGE ===== -->
+  <header class="page-header" role="banner">
+    <div class="overlay"></div>
+    <div class="header-content">
+      <h1>Pulley Systems</h1>
+      <p>Learn about pulley systems, their types, advantages, and practical applications.</p>
+      <a href="#pulley-content" class="btn btn-gradient">Explore Now</a>
+    </div>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="dashboard" role="main">
+    <h2 class="section-title">Pulley Systems</h2>
+    <p class="intro-text">Understand how pulley systems work to lift heavy objects and change force direction.</p>
+    
+    <!-- Pulley Content -->
+    <section class="pulley-content" id="pulley-content">
+      <div class="pulley-container">
+        <p>
+          A pulley system is a mechanical device that uses wheels and ropes to change the 
+          direction or magnitude of a force. Pulleys are commonly used to lift heavy objects 
+          or to change the direction of a force.
+        </p>
+
+        <h3>Types of Pulley Systems</h3>
+        <ol>
+          <li><b>Single Fixed Pulley:</b> Changes the direction of the force, but not its magnitude.</li>
+          <li><b>Single Movable Pulley:</b> Changes the magnitude of the force, but not its direction.</li>
+          <li><b>Compound Pulley:</b> A combination of fixed and movable pulleys that can change both 
+          the direction and magnitude of a force.</li>
+        </ol>
+
+        <section class="slideshow-container" data-delay="3000">
+          <div class="slide fade"><img src="assets/pulley1.jpg" alt="Single Fixed Pulley Diagram"></div>
+          <div class="slide fade"><img src="assets/pulley2.jpg" alt="Single Movable Pulley Diagram"></div>
+          <div class="slide fade"><img src="assets/pulley3.jpg" alt="Compound Pulley Diagram"></div>
+          <a class="prev" aria-label="Previous slide">&#10094;</a>
+          <a class="next" aria-label="Next slide">&#10095;</a>
+          <div class="dots">
+            <span class="dot" aria-label="Slide 1"></span>
+            <span class="dot" aria-label="Slide 2"></span>
+            <span class="dot" aria-label="Slide 3"></span>
+          </div>
+        </section>
+
+        <h3>Advantages of Pulley Systems</h3>
+        <ul>
+          <li><b>Mechanical Advantage:</b> Makes it easier to lift heavy objects.</li>
+          <li><b>Change in Direction:</b> Useful for lifting objects in tight spaces.</li>
+          <li><b>Reduced Effort:</b> Requires less force to lift a load, increasing efficiency.</li>
+        </ul>
+
+        <h3>Worked Examples on Pulley Systems</h3>
+        <!-- Example 1 -->
+        <div class="example-box">
+          <h4>Example 1: Single Fixed Pulley</h4>
+          <p><b>Problem:</b> A 50 N weight is lifted using a single fixed pulley. If the effort applied is 50 N, find the mechanical advantage.</p>
+          <p><b>Step 1:</b> MA = Load / Effort = 50 N / 50 N = 1</p>
+          <p><b>Answer:</b> The mechanical advantage is <b>1</b>.</p>
+        </div>
+
+        <!-- Example 2 -->
+        <div class="example-box">
+          <h4>Example 2: Single Movable Pulley</h4>
+          <p><b>Problem:</b> A 100 N weight is lifted using a single movable pulley. If the effort applied is 50 N, find the mechanical advantage.</p>
+          <p><b>Step 1:</b> MA = Load / Effort = 100 N / 50 N = 2</p>
+          <p><b>Answer:</b> The mechanical advantage is <b>2</b>.</p>
+        </div>
+
+        <!-- Example 3 -->
+        <div class="example-box">
+          <h4>Example 3: Compound Pulley</h4>
+          <p><b>Problem:</b> A compound pulley system has a mechanical advantage of 3. If the effort applied is 100 N, find the maximum weight that can be lifted.</p>
+          <p><b>Step 1:</b> Load = MA × Effort = 3 × 100 N = 300 N</p>
+          <p><b>Answer:</b> The maximum weight that can be lifted is <b>300 N</b>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <p class="author">Bismark Owiredu Boakye — Index: 5230110265</p>
+    <p class="contact">
+      Email: <a href="mailto:bismarkboakye505@gmail.com">bismarkboakye505@gmail.com</a> | 
+      Phone: <a href="tel:+233257409913">+233 25 740 9913</a>
+    </p>
+    <p>© <span id="year"></span> Mechanics for SHS Students</p>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

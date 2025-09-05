@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laws of Motion — Mechanics for SHS Students</title>
+  <link rel="icon" href="assets/crest.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    if (localStorage.getItem("loggedIn") !== "true") {
+      window.location.href = "login.html";
+    }
+  </script>
+</head>
+<body data-page="laws-of-motion">
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-left">
+      <img src="assets/crest.jpg" alt="Mechanics Crest Logo" class="nav-logo">
+      <span class="site-title">Mechanics</span>
+    </div>
+    <div class="nav-links" role="navigation">
+      <a href="index.html">Home</a>
+      <a href="laws-of-motion.html" class="active" aria-current="page">Laws</a>
+      <a href="forces.html">Forces</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="assignments.html">Assignments</a>
+      <a href="video.html">Videos</a>
+      <a href="login.html">Login</a>
+    </div>
+  </nav>
+
+  <!-- ===== HEADER SECTION WITH BACKGROUND IMAGE ===== -->
+  <header class="page-header" role="banner">
+    <div class="overlay"></div>
+    <div class="header-content">
+      <h1>Laws of Motion</h1>
+      <p>Explore Newton’s Three Laws of Motion, the foundation of classical mechanics.</p>
+      <a href="#laws-content" class="btn btn-gradient">Learn More</a>
+    </div>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="dashboard" role="main">
+    <h2 class="section-title">Newton’s Laws of Motion</h2>
+    <p class="intro-text">Newton’s Laws of Motion describe the relationship between a body and the forces acting on it.</p>
+    
+    <!-- Newton’s Image and Laws -->
+    <section class="laws-content" id="laws-content">
+      <div class="laws-container">
+        <img src="assets/newton.jpg" alt="Sir Isaac Newton" class="laws-image">
+        <div class="laws-text">
+          <h3>History of Newton’s Laws</h3>
+          <p>
+            Sir Isaac Newton formulated his three laws of motion, published in his 1687 work, <i>Philosophiæ Naturalis Principia Mathematica</i>. 
+            These laws describe the relationship between the motion of an object and the forces acting upon it.
+          </p>
+
+          <!-- First Law -->
+          <h4>1. Newton’s First Law (Law of Inertia)</h4>
+          <ul>
+            <li>An object at rest stays at rest, and an object in motion stays in motion with the same speed and direction unless acted upon by an unbalanced force.</li>
+            <li>Influenced by Galileo Galilei and René Descartes, who explored inertia.</li>
+            <li>Newton formalized these ideas, defining inertia precisely.</li>
+          </ul>
+          <div class="example-box">
+            <p><strong>Example:</strong> A 5 kg block is at rest on a frictionless surface. What force is required to keep it at rest? What force is required to accelerate it at 2 m/s²?</p>
+            <p><strong>Solution:</strong> To keep the block at rest, the net force is zero (F = 0). To accelerate at 2 m/s², F = ma = 5 kg × 2 m/s² = 10 N.</p>
+          </div>
+
+          <!-- Second Law -->
+          <h4>2. Newton’s Second Law</h4>
+          <ul>
+            <li>The net force on an object equals the rate of change of its momentum, or F = ma (force = mass × acceleration).</li>
+            <li>Provides a quantitative relationship between force, mass, and acceleration.</li>
+            <li>Built upon Newton’s observations and experiments.</li>
+          </ul>
+          <div class="example-box">
+            <p><strong>Example:</strong> A 10 kg object is accelerated at 3 m/s² by a 30 N force. What force is required to accelerate it at 5 m/s²?</p>
+            <p><strong>Solution:</strong> F = ma. Initially, F = 30 N, m = 10 kg, a = 3 m/s². For 5 m/s², F = 10 kg × 5 m/s² = 50 N.</p>
+          </div>
+
+          <!-- Third Law -->
+          <h4>3. Newton’s Third Law</h4>
+          <ul>
+            <li>For every action, there is an equal and opposite reaction.</li>
+            <li>Forces act in pairs, with the second object exerting an equal and opposite force.</li>
+            <li>Explains interactions like propulsion and collisions.</li>
+          </ul>
+          <div class="example-box">
+            <p><strong>Example:</strong> A person pushes a wall with 20 N. What force does the wall exert on the person?</p>
+            <p><strong>Solution:</strong> Per Newton’s Third Law, the wall exerts an equal and opposite force of 20 N on the person.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slideshow -->
+    <section class="slideshow-container">
+      <div class="slide fade"><img src="assets/law1.jpg" alt="Newton’s First Law Illustration"></div>
+      <div class="slide fade"><img src="assets/law2.jpg" alt="Newton’s Second Law Illustration"></div>
+      <div class="slide fade"><img src="assets/law3.jpg" alt="Newton’s Third Law Illustration"></div>
+      <a class="prev" onclick="plusSlides(-1)" aria-label="Previous slide">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)" aria-label="Next slide">&#10095;</a>
+      <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <p class="author">Bismark Owiredu Boakye — Index: 5230110265</p>
+    <p class="contact">
+      Email: <a href="mailto:bismarkboakye505@gmail.com">bismarkboakye505@gmail.com</a> | 
+      Phone: <a href="tel:+233257409913">+233 25 740 9913</a>
+    </p>
+    <p>© <span id="year"></span> Mechanics for SHS Students</p>
+  </footer>
+
+  <script src="assets/scripts.js"></script>
+</body>
+</html>

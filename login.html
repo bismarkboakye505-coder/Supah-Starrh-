@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login — Mechanics for SHS Students</title>
+  <link rel="icon" href="assets/crest.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="login" class="login-body">
+  
+
+  <!-- ===== LOGIN SECTION ===== -->
+  <main class="login-content" role="main">
+    <div class="container">
+      <!-- Form Section -->
+      <div class="form-section">
+        <img src="assets/crest.jpg" alt="Mechanics Crest Logo" class="login-logo">
+        <h2>Login to Mechanics</h2>
+        <p>Access your learning resources for Mechanics for SHS Students.</p>
+        <form id="loginForm" role="form" aria-label="Login form">
+          <div class="form-group">
+            <input type="text" id="username" placeholder="Username" required aria-required="true">
+          </div>
+          <div class="form-group password-group">
+            <input type="password" id="password" placeholder="Password" required aria-required="true">
+            <button type="button" class="toggle-password" aria-label="Toggle password visibility">👁️</button>
+          </div>
+          <button type="submit" class="submit-btn">Login</button>
+        </form>
+        <p class="muted small">Only authorized users can access the platform.</p>
+        <p id="errorMsg" class="error-msg" aria-live="polite"></p>
+        <div class="footer-links">
+          <a href="#">Forgot Password?</a>
+          <a href="#">Contact Support</a>
+        </div>
+      </div>
+      <!-- Image Section -->
+      <div class="image-section">
+        <div class="task-card">
+          <strong>Quiz Reminder</strong><br>
+          Mechanics Quiz: 10:00am–11:00am
+        </div>
+        <div class="meeting-card">
+          <strong>Assignment Due</strong><br>
+          Forces Assignment: 5:00pm
+        </div>
+      </div>
+    </div>
+  </main>
+
+ 
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
